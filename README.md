@@ -77,16 +77,6 @@ Before you begin, ensure you have the following installed on your system:
  Password - string123
 
 
-## References
-
-# FrontEnd
-https://javascript.plainenglish.io/jwt-token-authentication-in-angular-14-and-net-core-6-web-api-c3237cb4204
-
-# BackEnd
-https://github.com/DMIT-2015/dmit2015-1232-a01-courseproject-sanidhya099.git
-
-
-
 ## Creating a C# REST API with JWT Authentication and CRUD Operations:
 
 Understanding REST Principles: Developing a RESTful API involves understanding and implementing the principles of Representational State Transfer (REST), including resource identification through URI, uniform interface, statelessness, and more.
