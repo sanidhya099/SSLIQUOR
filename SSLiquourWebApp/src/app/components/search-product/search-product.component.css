@@ -1,0 +1,27 @@
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+  }
+  
+  form {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .search-field {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    width: 300px;
+  }
+  
+  .btn.custom-btn-style {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  

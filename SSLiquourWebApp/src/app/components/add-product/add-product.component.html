@@ -1,0 +1,70 @@
+<section>
+  <h3>Add Products</h3>
+    <form class="form-horizontal" (ngSubmit)="saveProduct()">      
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="name">Liquor Name:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="product.name" name="name">
+        </div>
+      </div>
+      <br />
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="brand">Brand:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="product.brand" name="brand">
+        </div>
+      </div>
+      <br />
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Category:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="product.category" name="category">
+        </div>
+      </div>
+      <br />
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="pwd">Alcohol By Volume:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="product.abv" name="abv">
+        </div>
+      </div>
+      <br />
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="volume">Volume:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="product.volume" name="volume">
+        </div>
+      </div>
+      <br />
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="countryOfOrigin">Country Of Origin:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="product.countryOfOrigin" name="countryOfOrigin">
+        </div>
+      </div>
+      <br />
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="stockAmount">Stock Amount:</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" [(ngModel)]="product.stockAmount" name="stockAmount">
+        </div>
+      </div>
+      <br />
+
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="price">Price:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" [(ngModel)]="product.price" name="price">
+        </div>
+      </div>
+      <br />
+
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+  </section>

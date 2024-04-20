@@ -1,0 +1,23 @@
+<main class="main">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="navbar-nav">
+          <a class="navbar-brand" href="#">Liquior By SS</a>
+          <a class="nav-item nav-link active" routerLink="/">Find A Product</a>
+          <a class="nav-item nav-link" routerLink="/products">Our Products</a>
+          <a *ngIf="isUserAuthenticated()" class="nav-item nav-link" routerLink="/add-product">Add Product</a>
+        </div>
+        <button *ngIf="!isUserAuthenticated()" class="btn btn-outline-success me-2" type="button">
+          <a class="nav-item nav-link" routerLink="/login">Login</a>
+        </button>
+        <button *ngIf="isUserAuthenticated()" class="btn btn-outline-success me-2" type="button">
+          <a class="nav-item nav-link" (click)="logOut()">Logout</a>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div class="main-content container">
+    <router-outlet />
+  </div>
+</main>
